@@ -12,30 +12,42 @@
   </head>
 
   <body>
-<nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#"><h1>Baltimore Boats</h1></a>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"><h1><span class="logo-line">BB</span> <span id="nav-name">Baltimore Boats</span></h1></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
+    <div class="navbar-nav ml-auto">
       <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="#">About</a>
       <a class="nav-item nav-link" href="#">Contact</a>
     </div>
   </div>
 </nav>
-    <%= yield %>
+      
+    <div class="page-content"><%= yield %></div>
       
 <!-- Footer -->
-<footer class="page-footer font-small special-color-dark pt-4">
+<footer id="footer" class="container-fluid">
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2018 Thomas Wingate
     </div>
     <!-- Copyright -->
 
-  </footer>
+</footer>
   <!-- Footer -->  
 
-  </body>
+</body>
+<script>
+  $(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+    $('#nav-name').css('display','none');
+  } else {
+    $('nav').removeClass('shrink');
+    $('#nav-name').css('display','inline');
+  }
+});
+</script>
 </html>

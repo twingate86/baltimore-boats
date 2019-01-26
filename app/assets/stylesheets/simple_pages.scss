@@ -3,25 +3,270 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-    background-color: darkgray;
+    overflow-x: hidden;
+    margin: 0 0 0 0;
+    background-image: image-url('bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-h1, h2 {
-    font-family: fantasy;
-    font-size: 1.5em;
+h1, h2, h3, {
+    font-family: Roboto;
     color: black;
+    letter-spacing: 0.9px;
+    text-align: left;
+    line-height: 28px;
 }
+h2 {
+    font-size: 20px;
+    color: #4A4A4A;
+    letter-spacing: 0;
+    text-align: left;
+}
+#section-one {
+    margin: 4% 6% 0 6%;
+}
+.section-two-heading {
+    margin: 0% 0% 0 6%;
+}
+#section-two {
+
+}
+#section-two-container {
+    margin: 0 1% 0 1%;
+}
+.col-sm {
+    margin: 3% 3% 2% 3%;
+    padding: 0% 3% 0 3%;
+    background-color: FFFFFF;
+    height: 332px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
+}
+.col-base {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
+  background-color: #317A7B;
+  width: 100%;
+  height: 76px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.col-base p {
+  margin: 4% 3% 2% 3%;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 18px;
+}
+.section-underline {
+    border-bottom: 3px solid #4A4A4A;
+    padding-bottom: 6px;
+}
+p  {
+    padding: 2% 0 0 0;
+    font-size: 16px;
+    color: #4A4A4A;
+    letter-spacing: 0;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+.aside {
+    font-size: 14px;
+    color: #9B9B9B;
+    text-align: left;
+    line-height: 20px;
+}
+.logo-line {
+    color: #FFFFFF;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: 400;
+}
+#nav-name {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 300;
+}
+a:hover {
+    background: none;
+    text-decoration: none;
+}
+/* Nav Bar */
 nav {
-    background-color: darkgray;
+  margin: 2% 8% 0% 8%;
+  padding: 0 0 5% 0;
+  .navbar-brand {font-size: 30px;}
+  .navbar-toggle {margin: 0 0 0 0;}
+   a {
+     font-size: 16px;
+     padding-bottom: 20px !important;
+     padding-top: 20px !important;
+     transition: all 0.3s ease;
+	 }
 }
+.collapse.navbar-collapse {
+
+}
+
+.navbar-nav .nav-link {
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #FFFFFF;
+}
+nav.navbar.shrink {
+  background-image: linear-gradient(-225deg, #204D4E 0%, #4D0D2B 100%);
+  margin: 0 0% 0 0%;
+  padding: 0 3.5% 0 3.5%;
+  min-height: 35px;
+ .logoline {font-size: 20px;}
+  a {
+    font-size: 14px;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+  }
+  .navbar-toggle {
+    margin: 8px 15px 8px 0;
+    padding: 4px 5px;
+  }
+}
+.page-content {
+    padding: 7% 0 0 0;
+}
+
+/* End Nav */
 .my-image {
-    width: 100%;
+    width: 80%;
 }
 footer {
-    color: black;
-    background-color: darkgray;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 18px;
+    background: #4A4A4A;
 }
+#carousel-wrapper {
+    margin: 3% 2.5% 0 2.5%;
+}
+.carousel  {
+    margin: 0 0% 0 0%;
+    padding: 0 0% 0 0%;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
+}
+.carousel-item  {
+}
+
 .carousel-item img {
-    max-width: 100%;
-    max-height: 500px;
+    width: 100%;
+}
+carousel-control-next {
+    
+}
+.carousel-caption {
+    margin: 0 30% 0 30%;
+    background: rgba(74, 74, 74, 0.5);
+    color: white;
+    font-weight: 600;
+}
+.carousel-indicators li {
+  margin: 0 1.5% 0 1.5%;
+  bottom: -70px;
+  background-color: rgba(49,122,123,0.25);
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+}
+.carousel-indicators li.active {
+  background-color: #317A7B;
+}
+/* Stying for Orders */
+.order-box {
+    padding: 2%;
+    background-color: white;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.page-title {
+    margin: 0 auto;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .logo-line {
+        color: red;
+    }
+nav {
+    margin: 0 0 0 0;        
+}
+.page-content {
+    padding: 20% 0 0 0;
+} 
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+    background-color: #335e63d1;
+    text-align: center;
+}
+nav.navbar.shrink .nav-link {
+    background-image: linear-gradient(-225deg, #204D4E 0%, #4D0D2B 100%);
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+     .logo-line {
+        color: orange;
+    }
+nav {
+    margin: 2% 8% 0% 8%;       
+}
+.page-content {
+    padding: 12% 0 0 0;
+}     
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+    background-color: #335e63d1;
+    text-align: center;
+}
+nav.navbar.shrink .nav-link {
+    background-image: linear-gradient(-225deg, #204D4E 0%, #4D0D2B 100%);
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+        .logo-line {
+        color: yellow;
+    }
+.page-content {
+    padding: 10% 0 0 0;
+}    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .logo-line {
+        color: greenyellow;
+    }
+.page-content {
+    padding: 6% 0 0 0;
+}
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-align: center;
+}
+nav.navbar.shrink .nav-link {
+    background-image: none;
+}
 }
