@@ -203,7 +203,6 @@ carousel-control-next {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .logo-line {
-        color: red;
     }
 nav {
     margin: 0 0 0 0;        
@@ -224,7 +223,6 @@ nav.navbar.shrink .nav-link {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
      .logo-line {
-        color: orange;
     }
 nav {
     margin: 2% 8% 0% 8%;       
@@ -246,7 +244,6 @@ nav.navbar.shrink .nav-link {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
         .logo-line {
-        color: yellow;
     }
 .page-content {
     padding: 10% 0 0 0;
@@ -256,7 +253,6 @@ nav.navbar.shrink .nav-link {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .logo-line {
-        color: greenyellow;
     }
 .page-content {
     padding: 6% 0 0 0;
