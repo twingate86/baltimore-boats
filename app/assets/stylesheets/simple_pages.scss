@@ -23,6 +23,15 @@ h2 {
     letter-spacing: 0;
     text-align: left;
 }
+a {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: black;
+}
 #section-one {
     margin: 4% 6% 0 6%;
 }
@@ -105,11 +114,8 @@ nav {
      transition: all 0.3s ease;
 	 }
 }
-.collapse.navbar-collapse {
-
-}
-
-.navbar-nav .nav-link {
+.navbar-nav {
+    color: white;
     text-transform: uppercase;
 }
 .navbar-light .navbar-nav .nav-link {
@@ -140,9 +146,7 @@ nav.navbar.shrink {
     width: 80%;
 }
 footer {
-    position: static;
-    left: 0;
-    bottom: 0;
+
     width: 100%;
     font-size: 12px;
     color: #FFFFFF;
@@ -198,7 +202,43 @@ carousel-control-next {
     text-align: center;
     padding-bottom: 1%;
 }
+.sub-page-title {
+    margin: 0 auto;
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 1%;
+}
+/* Styling for Products */
+.add-new {
+    text-align: center;
+    padding: 5%;
+}
+.add-new a {
+    color: black;
+    text-decoration: underline;
+    padding: 2%;
+}
+.products-table {
+    padding: 2%;
+    margin-bottom: 10%;
+}
+.products-table a {
+    color: black;
+    text-decoration: underline;
+}
+.edit {
+    text-align: center;
+}
 
+
+/* Sub-Pages */
+
+.sub-page-content {
+    background-color: white;
+    margin-top: 10%;
+    padding-top: 5%;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -210,7 +250,7 @@ nav {
 .page-content {
     padding: 20% 0 0 0;
 } 
-.navbar-nav .nav-link {
+.navbar-nav a {
     color: #FFFFFF;
     background-color: #335e63d1;
     text-align: center;
@@ -230,7 +270,7 @@ nav {
 .page-content {
     padding: 12% 0 0 0;
 }     
-.navbar-nav .nav-link {
+.navbar-nav a {
     color: #FFFFFF;
     background-color: #335e63d1;
     text-align: center;
@@ -257,10 +297,17 @@ nav.navbar.shrink .nav-link {
 .page-content {
     padding: 6% 0 0 0;
 }
-.navbar-nav .nav-link {
+.navbar-nav {
+    margin-right: 8%;
+    }
+.nav.navbar.shrink {
+    margin-right: 0%;    
+}
+.navbar-nav a {
     color: #FFFFFF;
     background-color: transparent;
     text-align: center;
+    margin: 0 2%;
 }
 nav.navbar.shrink .nav-link {
     background-image: none;

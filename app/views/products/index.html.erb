@@ -1,12 +1,15 @@
 <p id="notice"><%= notice %></p>
 <div class="container-fluid">
     <h1 class="page-title">Products</h1>
-
 <div class="row">
     <%= render @products %>
 </div>
-
-<!--<table>
+<div class="container-fluid add-new">
+<%= link_to 'Add New Product', new_product_path %>
+</div>
+<div class="container-fluid products-table">
+<h2>Manage Products:</h2>
+<table>
   <thead>
     <tr>
       <th>Name</th>
@@ -32,9 +35,6 @@
       </tr>
     <% end %>
   </tbody>
-</table>-->
-
-<br>
-
-<%= link_to 'New Product', new_product_path %>
+</table>
+</div>
 

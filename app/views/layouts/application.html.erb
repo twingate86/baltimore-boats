@@ -19,9 +19,11 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-      <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">About</a>
-      <a class="nav-item nav-link" href="#">Contact</a>
+      <%= link_to "Home", simple_pages_landing_page_path %>
+      <%= link_to "About", simple_pages_about_path %>
+      <%= link_to "Contact", simple_pages_contact_path %>
+      <%= link_to "Products", products_path %>
+      <%= link_to "Orders", orders_path %>
     </div>
   </div>
 </nav>
@@ -29,7 +31,7 @@
     <div class="page-content"><%= yield %></div>
       
 <!-- Footer -->
-<footer id="footer" class="container-fluid">
+<footer class="page-footer">
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2018 Thomas Wingate
     </div>
