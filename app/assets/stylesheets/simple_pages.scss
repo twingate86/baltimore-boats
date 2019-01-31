@@ -230,8 +230,23 @@ carousel-control-next {
 .edit {
     text-align: center;
 }
-
-
+.edit ul {
+    list-style: none;
+    text-align: left;
+}
+.modify-product-link a{
+    font-size: 12px;
+    color: #666;
+}
+.modify-product-link a:hover {
+    color: black;
+}
+.show-product-image {
+    width: 75%;
+}
+.show-product-attributes {
+    padding: 0% 12.5%;
+}
 /* Sub-Pages */
 
 .sub-page-content {
