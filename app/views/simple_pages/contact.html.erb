@@ -1,26 +1,30 @@
 <div class="container-fluid sub-page-content">
-    <h1 class="sub-page-title">Contact</h1>
-    <div class="container-fluid">
+    <div class="container-fluid contact-form-container">
         <p>Questions about boats? Get in contact with us!</p>
         <%= flash[:notice] %>
 
         <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
-        <div class="row">
+        <div class="row contact-row">
           <div class="form-group">
             <%= form.label :name %>
-            <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+            <%= form.text_field :name, class: "form-control", placeholder: "Enter Name", type:'text', required:'required' %>
           </div>
+        </div>
+        <div class="row contact-row">
           <div class="form-group">
             <%= form.label :email %>
-            <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+            <%= form.text_field :email, class: "form-control", placeholder: "Enter Email", type:'email', required:'required' %>
           </div>
+        </div>
+        <div class="row contact-row">
           <div class="form-group">
             <%= form.label :message %>
-            <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
+            <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5, required:'required' %>
           </div>
         </div>
         <%= form.submit "Send", class: "form_label" %>
         <% end %>
+        <p>Or the old fashioned way:</p>
         <ul>
             <li>Phone: 555-555-5555</li>
             <li>Email: boats@baltimoreboats.com</li>
