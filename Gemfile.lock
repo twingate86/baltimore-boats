@@ -43,6 +43,7 @@ GEM
     bindex (0.5.0)
     builder (3.2.3)
     byebug (10.0.2)
+    cancancan (1.17.0)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -169,6 +170,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (~> 3.1, >= 3.1.12)
   byebug
+  cancancan (~> 1.10)
   coffee-rails (~> 4.2)
   coffee-script-source (= 1.8.0)
   devise (~> 4.5)
