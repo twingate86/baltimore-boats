@@ -32,12 +32,17 @@
       <%= link_to "Contact", simple_pages_contact_path %>
       <%= link_to "Products", products_path %>
       <%= link_to "Orders", orders_path %>
+      <% if user_signed_in? %>
+        <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
+      <% else %>
+        <%= link_to('Login', new_user_session_path, class: "nav-link") %>
+      <% end %>
     </div>
   </div>
 </nav>
 
       
-      
+    <p class="notice"><%= notice %></p>
     <div class="page-content">
 
   

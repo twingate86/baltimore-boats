@@ -88,4 +88,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+    
+  #  so any dynamic links that show up inside emails from your development environment generate the right URLs 4.5    
+  config.action_mailer.default_url_options = { host: 'baltimore-boats.herokuapp.com'
 end
