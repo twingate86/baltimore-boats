@@ -166,6 +166,7 @@ footer {
 }
 #carousel-wrapper {
     margin: 3% 2.5% 0 2.5%;
+    padding-top: 7%;
 }
 .carousel  {
     margin: 0 0% 0 0%;
@@ -228,6 +229,9 @@ carousel-control-next {
     text-decoration: underline;
     padding: 2%;
 }
+.product-page {
+    padding-top: 6%;
+}
 .products-table {
     padding: 2%;
     margin-bottom: 10%;
@@ -279,6 +283,12 @@ contact-row{
 }
 .contact-page-content {
     margin: 0 auto;
+}
+.contact-form-container a {
+    color: black;
+}
+.contact-form-container a:hover {
+    color: gray;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
