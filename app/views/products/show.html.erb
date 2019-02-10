@@ -1,10 +1,12 @@
 <div class="container-fluid sub-page-content">
 <div class="container-fluid products-table edit">
 <p id="notice"><%= notice %></p>
-<div>
+<div class="row">
+    <div class="col-lg-6 col-sm-12">
     <%= image_tag(@product.image_url, class: "img-thumbnail rounded") %>
+    </div>
+    <div class="col-lg-6 col-sm-12">
     <ul class="show-product-attributes">
-
         <li>  <strong>Name:</strong>
           <%= @product.name %></li>
         <li>  <strong>Description:</strong>
@@ -12,13 +14,19 @@
         <li>  <strong>Colour:</strong>
           <%= @product.colour %></li>
         <li><i class="fas fa-dollar-sign"></i><%= @product.price %></li>
-        <li><strong>Average Rating:</strong>
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        <li><strong>Reviews:</strong><!--  @product.highest_rating_comment  --></li>
+        <li><p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+        </li>
     </ul>
-</div><br><br>
+    </div>
+    <div class="col-lg-6 col-sm-12">
+    <%= render 'new_comment' %>
+    </div
+    <div class="col-lg-6 col-sm-12">
+    <%= render 'comments' %>
+    </div>
 <div class="container-fluid"><%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %></div>
 </div>
 </div>
-
+</div>
+</div>

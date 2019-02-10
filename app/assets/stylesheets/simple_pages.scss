@@ -270,11 +270,15 @@ carousel-control-next {
 .show-product-image {
     
 }
-.show-product-attributes {
-    padding: 0% 25%;
+.edit ul {
+    padding: 0;
+}
+
+.product-reviews {
+    text-align: left;
 }
 .img-thumbnail {
-    width: 50%;
+    width: 100%;
 }
 /* Sub-Pages */
 
@@ -356,7 +360,7 @@ nav.navbar.shrink .nav-link {
     display: none;
     }
 .img-thumbnail {
-    width: 90%;
+    width: 100%;
 }
 }
 
@@ -375,7 +379,7 @@ nav.navbar.shrink .nav-link {
     display: none;
     }
 .img-thumbnail {
-    width: 70%;
+    width: 100%;
 }
 }
 
@@ -406,6 +410,6 @@ nav.navbar.shrink .nav-link {
     font-size: 12px;
 }
 .img-thumbnail {
-    width: 50%;
+    width: 100%;
 }
 }
