@@ -3,6 +3,6 @@
         <%= image_tag(product.image_url, class: "img-fluid") %>
         <a href="#"><h2><%= product.name %></h2></a>
         <p><%= product.description %></p>
-        <strong>$<%= product.price %></strong>
+        <strong>$<%= product.price %></strong><br><br>
         <p class="modify-product-link"><%= link_to 'Show', product %> | <%= link_to 'Edit', edit_product_path(product) %> | <%= link_to 'Remove', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
       </div><!-- /col -->

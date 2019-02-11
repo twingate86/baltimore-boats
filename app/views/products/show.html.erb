@@ -16,7 +16,7 @@
         <li><i class="fas fa-dollar-sign"></i><%= @product.price %></li>
         <li><p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
         </li>
-        <%= Product.first.highest_rating_comment %>
+        "<%= Product.first.highest_rating_comment.body %>"
     </ul>
     </div>
     <div class="col-lg-6 col-sm-12">
