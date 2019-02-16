@@ -6,19 +6,20 @@ class ProductsController < ApplicationController
 def index
   if params[:q] && Rails.env.development?
     search_term = params[:q]
-    @products = Product.search(search_term)
+    @products = Product.search(search_term).paginate(:page => params[:page], :per_page => 8)
   elsif params[:q] && Rails.env.production?
     search_term = params[:q]
-    @products = Product.search1(search_term)
+    @products = Product.search1(search_term).paginate(:page => params[:page], :per_page => 8)
   else
-    @products = Product.all
+    @products = Product.paginate(:page => params[:page], :per_page => 8)
   end
 end
 
   # GET /products/1
   # GET /products/1.json
   def show
-      @comments = @product.comments.order("created_at DESC")
+      # @comments = @product.comments.order("created_at DESC")
+      @comments = @product.comments.paginate(:page => params[:page], :per_page => 2).order("created_at DESC")
   end
 
   # GET /products/new

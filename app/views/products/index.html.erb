@@ -4,6 +4,9 @@
 <div class="row">
     <%= render @products %>
 </div>
+
+    <%= will_paginate @products %>
+
 <div class="container-fluid add-new">
 <%= link_to 'Add New Product', new_product_path %>
 </div>

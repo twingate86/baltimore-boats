@@ -280,6 +280,22 @@ carousel-control-next {
 .img-thumbnail {
     width: 100%;
 }
+.pagination {
+    text-align: center;
+    display: inherit;
+}
+.pagination a:visited {
+    color: black;
+}
+.pagination a:hover {
+    color: purple;
+}
+.disabled {
+    color: darkgray;
+}
+em.current {
+    color: purple;
+}
 /* Sub-Pages */
 
 .sub-page-content {
