@@ -12,6 +12,11 @@
         <p>
           <%= f.submit "Submit" %>
         </p>
+
       <% end %>
+    <% else %>
+        <h4>Add a review:</h4>
+        <p>You must be logged in to leave a review:</p>
+        <%= link_to('Login', new_user_session_path, class: "nav-link") %>
     <% end %>
 </div>

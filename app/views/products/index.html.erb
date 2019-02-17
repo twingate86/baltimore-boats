@@ -6,10 +6,11 @@
 </div>
 
     <%= will_paginate @products %>
-
-<div class="container-fluid add-new">
-<%= link_to 'Add New Product', new_product_path %>
-</div>
+<% if signed_in? && current_user.admin? %>
+    <div class="container-fluid add-new">
+    <%= link_to 'Add New Product', new_product_path %>
+    </div>
+<% end %>
 <!--<div class="container-fluid products-table">
 <h2>Manage Products:</h2>
 <table>

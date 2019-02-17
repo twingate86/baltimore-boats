@@ -46,7 +46,7 @@ a:hover {
 }
 .col-sm {
     margin: 3% 3% 2% 3%;
-    padding: 0% 3% 0 3%;
+    padding: 0% 0% 0 0%;
     background-color: FFFFFF;
     height: 332px;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
@@ -59,6 +59,20 @@ a:hover {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+.col-top {
+    position: relative;
+    overflow: hidden;
+    height: 256px;
+}
+.about-img {
+    position: absolute;
+    height: 100%;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
 }
 .col-base p {
   margin: 4% 3% 2% 3%;
@@ -105,10 +119,17 @@ p  {
     color: white;
     border-color: white;
 }
-.product-search {
-
+.search-btn {
+    color: white;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+.search-btn:hover {
+    color: purple; 
 }
 a:hover {
+    color: purple;
     background: none;
     text-decoration: none;
 }
@@ -124,6 +145,12 @@ nav {
      padding-top: 20px !important;
      transition: all 0.3s ease;
 	 }
+    a:hover {
+     color: purple; 
+    }
+    a:active {
+     color: purple;
+    }
 }
 .navbar-nav {
     color: white;
