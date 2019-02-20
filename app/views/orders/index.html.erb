@@ -2,14 +2,14 @@
     <h1 class="page-title">Orders</h1>
 </div>
 <div class="row">
-  <% @orders.each do |order| %>
+    <% @orders.each do |order| %>
     <div class="col-sm order-box">
-      <h2>
-        Order # <%= order.id %>:
-        <%= link_to order.product.name, order %>
-      </h2>
-      <p><%= order.product.description %></p>
-      <strong>$ <%= order.product.price %></strong>
+        <h2>
+            Order # <%= order.id %>:
+            <%= link_to order.product.name, order %>
+        </h2>
+        <p><%= order.product.description %></p>
+        <strong>$ <%= order.product.price %></strong>
     </div><!-- /col -->
-  <% end %>
+    <% end %>
 </div>

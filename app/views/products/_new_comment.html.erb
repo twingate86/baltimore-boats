@@ -1,22 +1,22 @@
 <div class="product-reviews">
     <% if signed_in? %>
-      <h4>Add a review:</h4>
-      <%= form_for([@product, @product.comments.build]) do |f| %>
-        <p>
-          <%= f.label :body, "Comments" %><br>
-          <%= f.text_area :body %>
-        </p>
+    <h4>Add a review:</h4>
+    <%= form_for([@product, @product.comments.build]) do |f| %>
+    <div class="form-group add-review">
+        <%= f.label :body, "Comments" %><br>
+        <%= f.text_area :body %>
+    </div>
 
-        <div class="rating"></div>
+    <div class="rating"></div>
 
-        <p>
-          <%= f.submit "Submit" %>
-        </p>
+    <div class="form-group add-review">
+        <%= f.submit "Submit", class: "btn-primary" %>
+    </div>
 
-      <% end %>
+    <% end %>
     <% else %>
-        <h4>Add a review:</h4>
-        <p>You must be logged in to leave a review:</p>
-        <%= link_to('Login', new_user_session_path, class: "nav-link") %>
+    <h4>Add a review:</h4>
+    <p>You must be logged in to leave a review:</p>
+    <%= link_to('Login', new_user_session_path, class: "nav-link") %>
     <% end %>
 </div>

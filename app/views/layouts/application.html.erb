@@ -1,93 +1,93 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Baltimore Boats</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <%= csrf_meta_tags %>
-  </head>
+    <head>
+        <title>Baltimore Boats</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <%= csrf_meta_tags %>
+    </head>
 
-  <body>
-<nav class="navbar fixed-top navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#"><h1><span class="logo-line">BB</span> <span id="nav-name">Baltimore Boats</span></h1></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-      <div id="search-navbar">
-        <div class="d-flex justify-content-center">
-            <%= form_with(url: products_path, method: 'get', local: true, class: 'form-inline my-2 my-lg-0') do |form| %>
-            <%= form.text_field :q, id: 'q', value: params[:q], placeholder: 'Product Search', class: 'form-control mr-sm-2' %>
-            <%= button_tag( class: 'btn search-btn') do %>
-            <i class="fas fa-search"></i>
-            <% end %>
-           <% end %>  
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><h1><span class="logo-line">BB</span> <span id="nav-name">Baltimore Boats</span></h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="search-navbar">
+                <div class="d-flex justify-content-center">
+                    <%= form_with(url: products_path, method: 'get', local: true, class: 'form-inline my-2 my-lg-0') do |form| %>
+                    <%= form.text_field :q, id: 'q', value: params[:q], placeholder: 'Product Search', class: 'form-control mr-sm-2' %>
+                    <%= button_tag( class: 'btn search-btn') do %>
+                    <i class="fas fa-search"></i>
+                    <% end %>
+                    <% end %>  
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <%= link_to "Home", simple_pages_landing_page_path %>
+                    <%= link_to "About", simple_pages_about_path %>
+                    <%= link_to "Contact", simple_pages_contact_path %>
+                    <%= link_to "Products", products_path %>
+                    <%= link_to "Orders", orders_path %>
+                    <div id="search-dropdown">
+                        <a class="d-flex justify-content-center">
+                            <%= form_with(url: products_path, method: 'get', local: true, class: 'form-inline my-2 my-lg-0') do |form| %>
+                            <%= form.text_field :q, id: 'q', value: params[:q], placeholder: 'Product Search', class: 'form-control mr-sm-2' %>
+                            <%= button_tag( class: 'btn search-btn') do %>
+                            <i class="fas fa-search"></i>
+                            <% end %>
+                            <% end %>   
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <% if alert %>  
+        <div class="alert alert-warning" role="alert">
+            <%= alert %>
         </div>
-    </div>
+        <% end %>
 
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto">
-      <%= link_to "Home", simple_pages_landing_page_path %>
-      <%= link_to "About", simple_pages_about_path %>
-      <%= link_to "Contact", simple_pages_contact_path %>
-      <%= link_to "Products", products_path %>
-      <%= link_to "Orders", orders_path %>
-      <div id="search-dropdown">
-      <a class="d-flex justify-content-center">
-            <%= form_with(url: products_path, method: 'get', local: true, class: 'form-inline my-2 my-lg-0') do |form| %>
-            <%= form.text_field :q, id: 'q', value: params[:q], placeholder: 'Product Search', class: 'form-control mr-sm-2' %>
-            <%= button_tag( class: 'btn search-btn') do %>
-                <i class="fas fa-search"></i>
-            <% end %>
-            <% end %>   
-      </a>
-      </div>
-    </div>
-  </div>
-</nav>
+        <div class="page-content"><%= yield %></div>
 
 
-            <% if alert %>  
-    <div class="alert alert-warning" role="alert">
-        <%= alert %>
-    </div>
-    <% end %>
-        
-       <div class="page-content"><%= yield %></div>
 
+        <!-- Footer -->
+        <footer class="page-footer">
+            <div class="login-footer">
+                <% if user_signed_in? %>
+                <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
+                <% else %>
+                <%= link_to('Login', new_user_session_path, class: "nav-link") %>
+                <% end %>
+            </div>
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2018 Thomas Wingate
+            </div>
+            <!-- Copyright -->
 
-      
-<!-- Footer -->
-<footer class="page-footer">
-    <div class="login-footer">
-      <% if user_signed_in? %>
-        <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
-      <% else %>
-        <%= link_to('Login', new_user_session_path, class: "nav-link") %>
-      <% end %>
-    </div>
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Thomas Wingate
-    </div>
-    <!-- Copyright -->
+        </footer>
+        <!-- Footer -->  
 
-</footer>
-  <!-- Footer -->  
-
-</body>
-<script>
-  $(window).scroll(function() {
-  if ($(document).scrollTop() > 50) {
-    $('nav').addClass('shrink');
-    $('#nav-name').css('display','none');
-  } else {
-    $('nav').removeClass('shrink');
-    $('#nav-name').css('display','inline');
-  }
-});
-</script>
+    </body>
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('nav').addClass('shrink');
+                $('#nav-name').css('display','none');
+            } else {
+                $('nav').removeClass('shrink');
+                $('#nav-name').css('display','inline');
+            }
+        });
+    </script>
 </html>
