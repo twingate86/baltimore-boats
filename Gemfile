@@ -40,6 +40,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Use sqlite3 as the database for Active Record, moved here in 3.10
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.8'
 end
 
 group :development do
