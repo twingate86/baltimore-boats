@@ -123,11 +123,15 @@ p  {
     border-color: purple;
     cursor: pointer;
 }
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: purple;
+    border-color: purple;
+    cursor: pointer;
+}
 .mr-sm-2 {
     font-size: 12px;
 }
 .form-group {
-    padding-right: 50%;
     text-align: left;
 }
 .btn-outline-secondary {
@@ -138,12 +142,14 @@ p  {
 .search-btn {
     color: white;
     background: transparent;
+    background-color: none;
     margin: 0;
-    padding: 0;
+    padding: 1.5%;
 }
 .search-btn:hover {
     color: purple; 
 }
+
 a:hover {
     color: purple;
     background: none;
@@ -326,6 +332,9 @@ carousel-control-next {
 .pagination {
     text-align: center;
     display: inherit;
+    a {
+        color: black;
+    }
 }
 .pagination a:visited {
     color: black;
