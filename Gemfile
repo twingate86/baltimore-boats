@@ -59,3 +59,4 @@ gem "devise", "~> 4.5"
 gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 gem 'cancancan', '~> 1.10'
 gem 'will_paginate', '~> 3.1.0'
+gem 'rails-controller-testing'
