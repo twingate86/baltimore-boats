@@ -36,6 +36,11 @@
                     <%= link_to "Contact", simple_pages_contact_path %>
                     <%= link_to "Products", products_path %>
                     <%= link_to "Orders", orders_path %>
+                    <% if user_signed_in? %>
+                    <%= link_to('Logout', destroy_user_session_path, method: :delete ) %>
+                    <% else %>
+                    <%= link_to('Login', new_user_session_path ) %>
+                    <% end %>
                     <div id="search-dropdown">
                         <a class="d-flex justify-content-center">
                             <%= form_with(url: products_path, method: 'get', local: true, class: 'form-inline my-2 my-lg-0') do |form| %>
@@ -46,30 +51,35 @@
                             <% end %>   
                         </a>
                     </div>
+
                 </div>
             </div>
         </nav>
 
 
-        <% if alert %>  
-        <div class="alert alert-warning" role="alert">
-            <%= alert %>
-        </div>
-        <% end %>
 
-        <div class="page-content"><%= yield %></div>
+
+        <div class="page-content">
+            <% if alert %>  
+            <div class="alert alert-warning" role="alert">
+                <%= alert %>
+            </div>
+            <% end %>
+
+            <% if notice %>  
+            <div class="alert alert-primary" role="alert">
+                <p id="notice"><%= notice %></p>
+            </div>
+            <% end %>
+            <%= yield %>
+
+        </div>
 
 
 
         <!-- Footer -->
         <footer class="page-footer">
-            <div class="login-footer">
-                <% if user_signed_in? %>
-                <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
-                <% else %>
-                <%= link_to('Login', new_user_session_path, class: "nav-link") %>
-                <% end %>
-            </div>
+
             <!-- Copyright -->
             <div class="footer-copyright text-center py-3">© 2018 Thomas Wingate
             </div>
@@ -89,5 +99,11 @@
                 $('#nav-name').css('display','inline');
             }
         });
+    </script>
+    <script>
+        setTimeout(fade_out, 5000);
+        function fade_out() {
+            $(".alert-primary").fadeOut().empty();
+        }
     </script>
 </html>

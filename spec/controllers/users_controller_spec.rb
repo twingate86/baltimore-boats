@@ -20,10 +20,10 @@ describe UsersController, type: :controller do
                     expect(response).to redirect_to(new_user_session_path)
                 end
             end
-            context 'user cannot access user2 details' do
+            context 'when a user is logged in' do
                 it "redirects to login" do
                     get :show, params: { id: user2.id }
-                    expect(response).to redirect_to(new_user_session_path)
+                    expect(response).to redirect_to(root_path)
                 end
             end
             
