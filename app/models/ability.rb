@@ -9,9 +9,15 @@ class Ability
        if user.admin?
          can :manage, :all
        else
-         can :read, User, id: user.id
-         cannot :read, User
          can :manage, User, id: user.id
+           
+         can :manage, Comment.where(user_id: user.id) do |comment|
+             comment.user_id == user.id
+         end
+           
+         cannot [:destroy, :delete], Comment.where(user_id: user.id) do |comment|
+             comment.user_id == user.id
+         end
        end
     #
     # The first argument to `can` is the action you are giving the user
