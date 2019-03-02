@@ -1,15 +1,17 @@
-<div class="container-fluid">
+<div class="container-fluid product-page">
     <h1 class="page-title">Orders</h1>
-</div>
-<div class="row">
-    <% @orders.each do |order| %>
-    <div class="col-sm order-box">
-        <h2>
-            Order # <%= order.id %>:
-            <%= link_to order.product.name, order %>
-        </h2>
-        <p><%= order.product.description %></p>
-        <strong>$ <%= order.product.price %></strong>
-    </div><!-- /col -->
-    <% end %>
+    <div class="row">
+        <% @orders.each do |order| %>
+        <div class="col-lg-3 col-md-4 col-sm-6 order-box">
+            <h2>
+                Order # <%= order.id %>:
+                <h2 class="product-name"><%= link_to order.product.name, order %></h2>
+            </h2>
+            <p><%= order.product.description %></p>
+            <strong> <%= number_to_currency(order.product.price) %></strong>
+            <p>Customer Name: <%= order.user.first_name %> <%= order.user.last_name %></p>
+            
+        </div><!-- /col -->
+        <% end %>
+    </div>
 </div>

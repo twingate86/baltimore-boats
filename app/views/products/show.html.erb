@@ -1,6 +1,9 @@
 <div class="container-fluid sub-page-content">
     <div class="container-fluid products-table edit">
         <p id="notice"><%= notice %></p>
+        <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
+      <% end %>
         <div class="row">
             <div class="col-lg-6 col-sm-12">
                 <%= image_tag(@product.image_url, class: "img-thumbnail rounded") %>
@@ -19,6 +22,7 @@
                     <br>
                     <%= form_with(url: '/payments/create') do |form| %>
                         <%= render partial: "shared/stripe_checkout_button" %>
+                        <%= hidden_field_tag(:product_id, @product.id) %>
                     <% end %>
 
                 </ul>

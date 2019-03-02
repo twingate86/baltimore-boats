@@ -1,7 +1,19 @@
-<div class="container">
-    <h2>Order Information</h2>
-    <strong>Order ID: </strong><%= @order.id %>
-    <strong>Product Name: </strong><%= @order.product.name %>
-    <strong>Product Price: </strong><%= number_to_currency(@order.product.price/100.to_f) %>
-    <strong>Total Price: </strong><%= number_to_currency(@order.total/100.to_f) %>
+<div class="container-fluid sub-page-content">
+    <div class="container-fluid products-table edit">
+        <div class="container">
+            <h2>Order Information</h2>
+            <div class="col-lg-6 col-sm-12">
+                <%= image_tag(@order.product.image_url, class: "img-thumbnail rounded") %>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <ul>
+                    <li><strong>Order ID: </strong><%= @order.id %></li>
+                    <li><strong>Product Name: </strong><%= @order.product.name %></li>
+                    <li><strong>Product Price: </strong><%= number_to_currency(@order.product.price) %></li>
+                    <li><strong>Total Price: </strong><%= number_to_currency(@order.total) %></li>
+                    <li><p>Customer Name: <%= @order.user.first_name %> <%= @order.user.last_name %></p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
