@@ -16,4 +16,17 @@ $(document).on('turbolinks:load', function(){
     }
   });
   $('.img-zoom').elevateZoom();
+  $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('nav').addClass('shrink');
+                $('#nav-name').css('display','none');
+            } else {
+                $('nav').removeClass('shrink');
+                $('#nav-name').css('display','inline');
+            }
+        });
+   setTimeout(fade_out, 5000);
+     function fade_out() {
+    $(".alert-primary").fadeOut().empty();
+        }
 });
