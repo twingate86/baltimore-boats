@@ -12,6 +12,10 @@ class Ability
          can :read, User, id: user.id
          cannot :read, User
          can :manage, User, id: user.id
+         can :read, Product
+         cannot :edit, Product
+         cannot :delete, Product
+         cannot :read, Order
        end
     #
     # The first argument to `can` is the action you are giving the user
