@@ -1,0 +1,838 @@
+/* line 5, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/products.scss */
+.product-name a {
+  margin-bottom: 0;
+  color: #666;
+}
+
+/* line 9, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/products.scss */
+.product-name a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+/* line 13, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/products.scss */
+.product-name a:visited {
+  color: #666;
+}
+/* line 1, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 5, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+body {
+  overflow-x: hidden;
+  margin: 0 0 0 0;
+  background-image: url(/assets/bg-77e2d64b18621ab997e54b1061da66f2493368095f7b5c1c65b245a27bee29d7.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* line 13, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+h1, h2, h3 {
+  font-family: Roboto;
+  color: black;
+  letter-spacing: 0.9px;
+  text-align: left;
+  line-height: 28px;
+}
+
+/* line 20, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  font-size: 3em;
+}
+
+/* line 23, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+h2 {
+  font-size: 20px;
+  color: #4A4A4A;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+/* line 29, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+a {
+  color: white;
+}
+
+/* line 32, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+a:visited {
+  color: white;
+}
+
+/* line 35, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+a:hover {
+  color: black;
+}
+
+/* line 38, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+#section-one {
+  margin: 4% 6% 0 6%;
+}
+
+/* line 41, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.section-two-heading {
+  margin: 0% 0% 0 6%;
+}
+
+/* line 47, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+#section-two-container {
+  margin: 0 1% 0 1%;
+}
+
+/* line 50, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.col-sm {
+  margin: 3% 3% 2% 3%;
+  padding: 0% 0% 0 0%;
+  background-color: FFFFFF;
+  height: 332px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* line 57, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.col-base {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #317A7B;
+  width: 100%;
+  height: 76px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 66, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.col-top {
+  position: relative;
+  overflow: hidden;
+  height: 256px;
+}
+
+/* line 71, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.about-img {
+  position: absolute;
+  height: 100%;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
+
+/* line 80, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.col-base p {
+  margin: 4% 3% 2% 3%;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 18px;
+}
+
+/* line 88, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.section-underline {
+  border-bottom: 3px solid #4A4A4A;
+  padding-bottom: 6px;
+}
+
+/* line 92, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+p {
+  padding: 2% 0 0 0;
+  font-size: 16px;
+  color: #4A4A4A;
+  letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+/* line 100, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.aside {
+  font-size: 14px;
+  color: #9B9B9B;
+  text-align: left;
+  line-height: 20px;
+}
+
+/* line 106, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.logo-line {
+  color: #FFFFFF;
+  font-size: 25px;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+/* line 112, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+#nav-name {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* line 117, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.btn-primary {
+  margin: 2% 1% 1% 0;
+  color: black;
+  background-color: transparent;
+  border-color: purple;
+  border-radius: 12px;
+}
+
+/* line 124, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.btn-primary:hover {
+  background-color: purple;
+  border-color: purple;
+  cursor: pointer;
+}
+
+/* line 129, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: purple;
+  border-color: purple;
+  cursor: pointer;
+}
+
+/* line 134, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.mr-sm-2 {
+  font-size: 12px;
+}
+
+/* line 137, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.form-group {
+  text-align: left;
+}
+
+/* line 140, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.btn-outline-secondary {
+  font-size: 12px;
+  color: white;
+  border-color: white;
+}
+
+/* line 145, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.search-btn {
+  color: white;
+  background: transparent;
+  background-color: none;
+  margin: 0;
+  padding: 1.5%;
+}
+
+/* line 152, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.search-btn:hover {
+  color: purple;
+}
+
+/* line 156, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+a:hover {
+  color: purple;
+  background: none;
+  text-decoration: none;
+}
+
+/* Nav Bar */
+/* line 162, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+nav {
+  margin: 2% 8% 0% 8%;
+  padding: 0 0 5% 0;
+}
+/* line 165, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+nav .navbar-brand {
+  font-size: 30px;
+}
+/* line 166, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+nav .navbar-toggle {
+  margin: 0 0 0 0;
+}
+/* line 167, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+nav a {
+  font-size: 16px;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+  transition: all 0.3s ease;
+}
+/* line 173, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+nav a:hover {
+  color: purple;
+}
+/* line 176, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+nav a:active {
+  color: purple;
+}
+
+/* line 180, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.navbar-nav {
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 184, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.navbar-light .navbar-nav .nav-link {
+  color: #FFFFFF;
+}
+
+/* line 187, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+nav.navbar.shrink {
+  background-image: linear-gradient(-225deg, #204D4E 0%, #4D0D2B 100%);
+  margin: 0 0% 0 0%;
+  padding: 0 3.5% 0 3.5%;
+  min-height: 35px;
+}
+/* line 192, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+nav.navbar.shrink .logoline {
+  font-size: 20px;
+}
+/* line 193, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+nav.navbar.shrink a {
+  font-size: 14px;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
+}
+/* line 198, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+nav.navbar.shrink .navbar-toggle {
+  margin: 8px 15px 8px 0;
+  padding: 4px 5px;
+}
+
+/* line 203, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.page-content {
+  padding: 5% 0 0 0;
+}
+
+/* End Nav */
+/* line 208, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.alert-warning {
+  background: none;
+  border: none;
+  text-align: center;
+  color: red;
+}
+
+/* line 214, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.alert-primary {
+  color: white;
+  background-color: transparent;
+  border-color: transparent;
+  background: none;
+  position: fixed;
+}
+
+/* line 221, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.my-image {
+  width: 80%;
+}
+
+/* line 224, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+footer {
+  margin-top: 5%;
+  width: 100%;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 18px;
+  background: #4A4A4A;
+}
+
+/* line 234, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.login-footer {
+  font-size: 1.2em;
+  padding-right: 4%;
+  text-align: right;
+}
+
+/* line 239, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+#carousel-wrapper {
+  margin: 3% 2.5% 0 2.5%;
+  padding-top: 7%;
+}
+
+/* line 243, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.carousel {
+  margin: 0 0% 0 0%;
+  padding: 0 0% 0 0%;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* line 251, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.carousel-item img {
+  width: 100%;
+}
+
+/* line 257, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.carousel-caption {
+  margin: 0 30% 0 30%;
+  background: rgba(74, 74, 74, 0.5);
+  color: white;
+  font-weight: 600;
+}
+
+/* line 263, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.carousel-indicators li {
+  margin: 0 1.5% 0 1.5%;
+  bottom: -70px;
+  background-color: rgba(49, 122, 123, 0.25);
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+}
+
+/* line 271, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.carousel-indicators li.active {
+  background-color: #317A7B;
+}
+
+/* Stying for Orders */
+/* line 275, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.order-box {
+  padding: 2%;
+  background-color: white;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* line 280, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.page-title {
+  margin: 0 auto;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+/* line 287, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.sub-page-title {
+  margin: 0 auto;
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+/* Styling for Products */
+/* line 295, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.add-new {
+  text-align: center;
+  padding: 5%;
+}
+
+/* line 299, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.add-new a {
+  color: black;
+  text-decoration: underline;
+  padding: 2%;
+}
+
+/* line 304, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.product-page {
+  padding-top: 6%;
+}
+
+/* line 307, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.products-table {
+  padding: 2%;
+  margin-bottom: 10%;
+}
+
+/* line 311, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.products-table a {
+  color: black;
+  text-decoration: underline;
+}
+
+/* line 315, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.show-product-attributes {
+  line-height: 25px;
+}
+
+/* line 318, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.edit {
+  text-align: center;
+}
+
+/* line 321, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.edit ul {
+  list-style: none;
+  text-align: left;
+}
+
+/* line 325, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.modify-product-link a {
+  font-size: 12px;
+  color: #666;
+}
+
+/* line 329, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.modify-product-link a:hover {
+  color: black;
+}
+
+/* line 335, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.edit ul {
+  padding: 0;
+}
+
+/* line 339, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.product-reviews {
+  text-align: left;
+}
+
+/* line 342, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.img-thumbnail {
+  width: 100%;
+}
+
+/* line 345, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.pagination {
+  text-align: center;
+  display: inherit;
+}
+/* line 348, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.pagination a {
+  color: black;
+}
+
+/* line 352, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.pagination a:visited {
+  color: black;
+}
+
+/* line 355, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.pagination a:hover {
+  color: purple;
+}
+
+/* line 358, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.disabled {
+  color: darkgray;
+}
+
+/* line 361, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+em.current {
+  color: purple;
+}
+
+/* Sub-Pages */
+/* line 366, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.sub-page-content {
+  background-color: white;
+  margin-top: 10%;
+  padding-top: 5%;
+}
+
+/* line 371, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.thanks {
+  text-align: center;
+  min-height: 400px;
+}
+
+/* line 375, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.thanks h3 {
+  text-align: center;
+}
+
+/* line 378, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.contact-form-container {
+  margin: 0 10%;
+}
+
+/* line 381, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+contact-row {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* line 385, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.contact-page-content {
+  margin: 0 auto;
+}
+
+/* line 388, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.contact-form-container a {
+  color: black;
+}
+
+/* line 391, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+.contact-form-container a:hover {
+  color: gray;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* line 399, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  nav {
+    margin: 0 0 0 0;
+  }
+
+  /* line 402, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  .page-content {
+    padding: 12% 0 0 0;
+  }
+
+  /* line 405, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  .navbar-nav a {
+    color: #FFFFFF;
+    background-color: #335e63d1;
+    text-align: center;
+  }
+
+  /* line 410, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  nav.navbar.shrink .nav-link {
+    background-image: linear-gradient(-225deg, #204D4E 0%, #4D0D2B 100%);
+  }
+
+  /* line 413, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  #search-navbar {
+    display: none;
+  }
+
+  /* line 416, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  .img-thumbnail {
+    width: 100%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* line 426, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  nav {
+    margin: 2% 8% 0% 8%;
+  }
+
+  /* line 429, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  .page-content {
+    padding: 8% 0 0 0;
+  }
+
+  /* line 432, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  .navbar-nav a {
+    color: #FFFFFF;
+    background-color: #335e63d1;
+    text-align: center;
+  }
+
+  /* line 437, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  nav.navbar.shrink .nav-link {
+    background-image: linear-gradient(-225deg, #204D4E 0%, #4D0D2B 100%);
+  }
+
+  /* line 440, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  #search-navbar {
+    display: none;
+  }
+
+  /* line 443, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  .img-thumbnail {
+    width: 100%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* line 453, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  .page-content {
+    padding: 6% 0 0 0;
+  }
+
+  /* line 456, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  #search-navbar {
+    display: inherit;
+  }
+
+  /* line 459, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  #search-dropdown {
+    display: none;
+  }
+
+  /* line 462, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  .img-thumbnail {
+    width: 100%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* line 472, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  .page-content {
+    padding: 3% 0 0 0;
+  }
+
+  /* line 475, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  .navbar-nav {
+    margin-right: 8%;
+  }
+
+  /* line 478, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  .nav.navbar.shrink {
+    margin-right: 0%;
+  }
+
+  /* line 481, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  .navbar-nav a {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-align: center;
+    margin: 0 2%;
+  }
+
+  /* line 487, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  nav.navbar.shrink .nav-link {
+    background-image: none;
+  }
+
+  /* line 490, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  .mr-sm-2 {
+    font-size: 12px;
+  }
+
+  /* line 493, C:/Users/thomw/baltimore-boats/app/assets/stylesheets/simple_pages.scss */
+  .img-thumbnail {
+    width: 100%;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+ */
+
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/raty.eot");
+  src: url("./fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/raty.svg#raty") format("svg");
+  src: url("./fonts/raty.ttf") format("truetype");
+  src: url("./fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}

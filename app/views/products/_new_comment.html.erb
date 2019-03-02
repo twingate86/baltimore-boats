@@ -1,10 +1,10 @@
 <div class="product-reviews col-8">
     <% if signed_in? %>
-    <h4>Add a review:</h4>
-    <%= form_for([@product, @product.comments.build]) do |f| %>
+    <h4></h4>
+    <%= form_for([@product, @product.comments.build], remote: true) do |f| %>
     <div class="form-group add-review">
         <%= f.label :body, "Comments" %><br>
-        <%= f.text_area :body, class: "form-control" %>
+        <%= f.text_area :body, class: "form-control", placeholder: "write your review here" %>
     </div>
 
     <div class="rating"></div>

@@ -1,4 +1,14 @@
 <div class="product-reviews">
+    <h4></h4>
+    <div>
+        <% @comments.each do |comment| %>
+          <%= render comment %>
+        <% end %>
+        <%= will_paginate @comments %>
+    </div>
+</div>
+
+<!--<div class="product-reviews">
     <h4>Reviews</h4>
     <% @comments.each do |comment| %>
     <div>
@@ -12,4 +22,4 @@
     <% end %>
     <%= will_paginate @comments %>
 
-</div>
+</div>-->
