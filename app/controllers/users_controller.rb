@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     before_action :authenticate_user!
     load_and_authorize_resource
 
-    # GET /users
+    # GET /users 
     # GET /users.json
     def index
         @users = User.all
@@ -14,7 +14,7 @@ class UsersController < ApplicationController
     def show
     end
 
-    # GET /users/new
+    # GET /users/
     def new
         @user = User.new
     end
