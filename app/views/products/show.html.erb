@@ -19,6 +19,7 @@
                             <%= @product.colour %></li>
                         <li><%= number_to_currency(@product.price) %></li>
                         <li>Average Rating: <span class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></span></li>
+                        <li>Product viewed <%= @count %> times!</li>
                         <!--<li>"< %= @product.highest_rating_comment.body %>"</li> ASK HENDI-->
                         <br>
                         <%= form_with(url: '/payments/create') do |form| %>
