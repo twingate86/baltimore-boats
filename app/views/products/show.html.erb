@@ -5,28 +5,30 @@
         <div class="alert alert-<%= key %>"><%= value %></div>
       <% end %>
         <div class="row">
-            <div class="col-lg-6 col-sm-12">
-                <%= image_tag(@product.image_url, class: "img-thumbnail rounded img-zoom", data_zoom_image: "(@product.image_url)") %>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <ul class="show-product-attributes">
-                    <li>  <strong>Name:</strong>
-                        <%= @product.name %></li>
-                    <li>  <strong>Description:</strong>
-                        <%= @product.description %></li>
-                    <li>  <strong>Colour:</strong>
-                        <%= @product.colour %></li>
-                    <li><%= number_to_currency(@product.price) %></li>
-                    <li>Average Rating: <span class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></span></li>
-                    <!--<li>"< %= @product.highest_rating_comment.body %>"</li> ASK HENDI-->
-                    <br>
-                    <%= form_with(url: '/payments/create') do |form| %>
-                        <%= render partial: "shared/stripe_checkout_button" %>
-                        <%= hidden_field_tag(:product_id, @product.id) %>
-                    <% end %>
+            <% cache @product do %>
+                <div class="col-lg-6 col-sm-12">
+                    <%= image_tag(@product.image_url, class: "img-thumbnail rounded img-zoom", data_zoom_image: "(@product.image_url)") %>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <ul class="show-product-attributes">
+                        <li>  <strong>Name:</strong>
+                            <%= @product.name %></li>
+                        <li>  <strong>Description:</strong>
+                            <%= @product.description %></li>
+                        <li>  <strong>Colour:</strong>
+                            <%= @product.colour %></li>
+                        <li><%= number_to_currency(@product.price) %></li>
+                        <li>Average Rating: <span class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></span></li>
+                        <!--<li>"< %= @product.highest_rating_comment.body %>"</li> ASK HENDI-->
+                        <br>
+                        <%= form_with(url: '/payments/create') do |form| %>
+                            <%= render partial: "shared/stripe_checkout_button" %>
+                            <%= hidden_field_tag(:product_id, @product.id) %>
+                        <% end %>
 
-                </ul>
-            </div>
+                    </ul>
+                </div>
+               <% end %>
             <div class="col-lg-6 col-sm-12">
                 <%= render 'new_comment' %>
             </div>

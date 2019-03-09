@@ -2,7 +2,6 @@
     <div class="container-fluid contact-form-container">
         <p>Questions about boats? Get in contact with us!</p>
         <%= flash[:notice] %>
-
         <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
         <div class="row contact-row">
             <div class="form-group">
