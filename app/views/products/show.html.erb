@@ -4,7 +4,7 @@
         <% flash.each do |key, value| %>
         <div class="alert alert-<%= key %>"><%= value %></div>
       <% end %>
-        <div class="row">
+        <div  class="row" data-product-id="<%= @product.id %>">
             <% cache @product do %>
                 <div class="col-lg-6 col-sm-12">
                     <%= image_tag(@product.image_url, class: "img-thumbnail rounded img-zoom", data_zoom_image: "(@product.image_url)") %>
