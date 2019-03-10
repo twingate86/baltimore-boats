@@ -96,6 +96,7 @@ GEM
     multipart-post (2.0.0)
     net-http-persistent (3.0.0)
       connection_pool (~> 2.2)
+    newrelic_rpm (6.1.0.352)
     nio4r (2.3.1)
     nokogiri (1.8.5-x86-mingw32)
       mini_portile2 (~> 2.3.0)
@@ -233,6 +234,7 @@ DEPENDENCIES
   factory_bot_rails
   jbuilder (~> 2.5)
   jquery-rails
+  newrelic_rpm
   pg
   puma (~> 3.7)
   rails (~> 5.1.6)
