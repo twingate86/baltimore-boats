@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe Product do
     context "when the product has comments" do
-        let(:product) { Product.create!(name: "race boat") }
+        let(:product) { Product.create!(name: "race boat", description: "very fast", colour: "red", price: "100", image_url: "row-boat.jpg") }
         let(:user) { User.create!(email: "idontwanna@gomail.com", password: "123456") }
         
         before do
@@ -15,7 +15,19 @@ describe Product do
     end
     
         it "is not valid without name" do
-            expect(Product.new(description: "Nice boat")).not_to be_valid
+            expect(Product.new(description: "very fast", colour: "red", price: "100", image_url: "row-boat.jpg")).not_to be_valid
+        end
+        it "is not valid without description" do
+            expect(Product.new(name: "race boat", colour: "red", price: "100", image_url: "row-boat.jpg")).not_to be_valid
+        end
+        it "is not valid without colour" do
+            expect(Product.new(name: "race boat", description: "very fast", price: "100", image_url: "row-boat.jpg")).not_to be_valid
+        end
+        it "is not valid without price" do
+            expect(Product.new(name: "race boat", description: "very fast", colour: "red", image_url: "row-boat.jpg")).not_to be_valid
+        end
+        it "is not valid without image_url" do
+            expect(Product.new(name: "race boat", description: "very fast", colour: "red", price: "100")).not_to be_valid
         end
     end
 end
