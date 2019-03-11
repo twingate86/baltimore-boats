@@ -85,7 +85,7 @@ describe ProductsController, type: :controller do
             end
         end 
     end
-    
+
     describe 'POST products#create' do
         context 'when an admin is logged in' do
             before do
@@ -108,7 +108,7 @@ describe ProductsController, type: :controller do
                 end
             end
         end
-        
+
         context 'when no one is logged in' do
             it 'should redirect to root' do
                 expect {

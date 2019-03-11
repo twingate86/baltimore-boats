@@ -13,19 +13,19 @@
     </head>
 
     <body>
-                  <div class="container-fluid alert-container">
-                <% if alert %>  
-                <div class="alert alert-warning" role="alert">
-                    <%= alert %>
-                </div>
-                <% end %>
-
-                <% if notice %>  
-                <div class="alert alert-primary" role="alert">
-                    <p id="notice"><%= notice %></p>
-                </div>
-                <% end %>
+        <div class="container-fluid alert-container">
+            <% if alert %>  
+            <div class="alert alert-warning" role="alert">
+                <%= alert %>
             </div>
+            <% end %>
+
+            <% if notice %>  
+            <div class="alert alert-primary" role="alert">
+                <p id="notice"><%= notice %></p>
+            </div>
+            <% end %>
+        </div>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#"><h1><span class="logo-line">BB</span> <span id="nav-name">Baltimore Boats</span></h1></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,7 +73,7 @@
 
 
         <div class="page-content">
-  
+
             <%= yield %>
 
         </div>
@@ -93,21 +93,21 @@
 
     </body>
     <!--MOVED TO site.js.erb --
-    <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('nav').addClass('shrink');
-                $('#nav-name').css('display','none');
-            } else {
-                $('nav').removeClass('shrink');
-                $('#nav-name').css('display','inline');
-            }
-        });
-    </script>
-    <script>
-        setTimeout(fade_out, 5000);
-        function fade_out() {
-            $(".alert-primary").fadeOut().empty();
-        }
-    </script>-->
+<script>
+$(window).scroll(function() {
+if ($(document).scrollTop() > 50) {
+$('nav').addClass('shrink');
+$('#nav-name').css('display','none');
+} else {
+$('nav').removeClass('shrink');
+$('#nav-name').css('display','inline');
+}
+});
+</script>
+<script>
+setTimeout(fade_out, 5000);
+function fade_out() {
+$(".alert-primary").fadeOut().empty();
+}
+</script>-->
 </html>
