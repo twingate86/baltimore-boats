@@ -17,7 +17,7 @@
                         <%= @product.description %></li>
                     <li>  <strong>Colour:</strong>
                         <%= @product.colour %></li>
-                    <li><%= number_to_currency(@product.price) %></li>
+                    <li><%= number_to_currency(@product.price/100.00) %></li>
                     <li>Average Rating: <span class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></span></li>
                     <% end %>
                     <li>Product viewed <%= @count %> times!</li>

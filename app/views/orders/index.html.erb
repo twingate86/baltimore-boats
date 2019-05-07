@@ -8,7 +8,7 @@
                 <h2 class="product-name"><%= link_to order.product.name, order %></h2>
             </h2>
             <p><%= order.product.description %></p>
-            <strong> <%= number_to_currency(order.product.price) %></strong>
+            <strong> <%= number_to_currency(order.product.price/100.00) %></strong>
             <p>Customer Name: <%= order.user.first_name %> <%= order.user.last_name %></p>
             
         </div><!-- /col -->

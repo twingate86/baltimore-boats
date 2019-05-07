@@ -9,8 +9,8 @@
                 <ul>
                     <li><strong>Order ID: </strong><%= @order.id %></li>
                     <li><strong>Product Name: </strong><%= @order.product.name %></li>
-                    <li><strong>Product Price: </strong><%= number_to_currency(@order.product.price) %></li>
-                    <li><strong>Total Price: </strong><%= number_to_currency(@order.total) %></li>
+                    <li><strong>Product Price: </strong><%= number_to_currency(@order.product.price/100.00) %></li>
+                    <li><strong>Total Price: </strong><%= number_to_currency(@order.total/100.00) %></li>
                     <li><p>Customer Name: <%= @order.user.first_name %> <%= @order.user.last_name %></p></li>
                 </ul>
             </div>
